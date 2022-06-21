@@ -1,0 +1,689 @@
+<style type="text/css">
+    .contenedor {
+        line-height: 25px;
+    }
+
+    contenedor li {
+        width: 270px;
+    }
+
+    .contenedor input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .row {
+        margin-top: 1em;
+        display: flex;
+    }
+
+    .row .col {
+        flex: 1;
+    }
+
+    .row .col:last-child {
+        margin-left: 1%;
+    }
+
+    /* Accordion styles */
+    .tabs {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    }
+
+    .tab {
+        width: 94%;
+        color: #333;
+        overflow: hidden;
+    }
+
+    .tab-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: #FFD400;
+        font-weight: bold;
+        cursor: pointer;
+        /* Icon */
+    }
+
+    .tab-label:hover {
+        background: #eac300;
+    }
+
+    .tab-label::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all .35s;
+    }
+
+    .tab-content {
+        max-height: 0;
+        padding: 0 1em;
+        color: #000;
+        background: white;
+        transition: all .35s;
+    }
+
+    .tab-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 0.75em;
+        background: #FFD400;
+        cursor: pointer;
+    }
+
+    .tab-close:hover {
+        background: #eac300;
+    }
+
+    input:checked+.tab-label {
+        background: #eac300;
+    }
+
+    input:checked+.tab-label::after {
+        transform: rotate(90deg);
+    }
+
+    input:checked~.tab-content {
+        max-height: 100%;
+        padding: 1em;
+    }
+
+    .titulosTabs {
+        text-align: center;
+        font-size: xx-large;
+        line-height: normal;
+    }
+
+
+    .parrafo {
+        text-align: justify;
+        margin-top: 5%;
+    }
+</style>
+
+<div class="contenedor">
+
+    <article>
+        <div class="row">
+            <div class="col">
+                <div class="tabs">
+
+
+
+                    <div class="tab">
+                        <input type="checkbox" id="chck1">
+                        <label class="tab-label" for="chck1">TÉRMINOS Y CONDICIONES DPSTREET.MX</label>
+                        <div class="tab-content">
+                            <h1 class="titulosTabs">TÉRMINOS Y
+                                CONDICIONES DPSTREET.MX</h1>
+                            <br><br>
+
+
+                            <div class="parrafo">
+                                <h2>30% de descuento en tu segundo artículo | DPS</h2>
+                                <p>
+                                    <ol>
+                                        <li>Exclusivo en dpstreet.mx y app dp, sección dpstreet.</li>
+                                        <li>Válido sólo en productos sin descuento</li>
+                                        <li>No entra Nike, Converse o New Era</li>
+                                        <li>No aplica en Jerseys ni colecciones. </li>
+                                        <li>El 30% de descuento se aplicará en el producto con menor precio. </li>
+                                        <li>Promoción no válida o acumulable con otras promociones o cupones de
+                                            descuento
+                                            vigentes en dpstreet.mx y app dp, sección dpstreet.</li>
+                                        <li>Promoción sujeta a disponibilidad de los artículos.</li>
+                                        <li>En caso falta de inventario, producto dañado o perdido, se cancelará el
+                                            envío y
+                                            será reembolsado el monto pagado </li>
+                                        <li>La promoción mostrada en dpstreet.mx y app dp, sección dpstreet, pueden
+                                            variar a
+                                            los de tiendas físicas. Los porcentajes de descuentos y promociones
+                                            ofertados en
+                                            dpstreet.mx y app dp, sección dpstreet son de carácter exclusivo para
+                                            compras
+                                            realizadas en la tienda en línea, estos no pueden ser aplicados ni
+                                            replicados en
+                                            tiendas físicas en ninguno de sus formatos.</li>
+                                        <li>Promoción válida pagando con: Tarjetas de crédito y débito participantes,
+                                            Paypal, Efectivo, Tarjeta Clubdp.</li>
+                                        <li>No aplica con la forma de pago: dpvale electrónico y/o pago en tienda con
+                                            dpvale.</li>
+                                        <li>Promoción válida del 10 al 30 de junio del 2022</li>
+                                    </ol>
+                                </p>
+
+                            </div>
+
+
+                            <div class="parrafo">
+                                <h2>Cupón promoción pago en efectivo OXXO | DPS</h2>
+                                <p>
+                                    <ol>
+                                        <li>Exclusivo en compras dpstreet.mx</li>
+                                        <li>Vigencia: 01 al 30 de junio</li>
+                                        <li>Cupón no acumulable. </li>
+                                        <li>No válido con otras promociones </li>
+                                        <li>Aplica con todos los métodos de pago </li>
+                                    </ol>
+                                </p>
+                            </div>
+
+
+                            <div class="parrafo">
+                                <h2>Promociones con dpvale y dpvale electrónico</h2>
+                                <p>
+                                    Las promociones del sitio y los cupones adicionales no entran las formas de pago
+                                    dpvale
+                                    en tienda y dpvale electrónico.
+                                </p>
+                            </div>
+
+
+                            <div class="parrafo">
+                                <h2>Meses sin intereses pagando con tarjetas de crédito VISA o MASTERCARD en compras
+                                    mínimas
+                                    de $1,000 pesos.</h2>
+
+                                <p>
+
+                                    Tarjeta de crédito Visa / Mastercard a 3, 6, 9 y 12 meses sin intereses con tarjetas
+                                    de
+                                    cualquier banco de la República Mexicana.
+                                    <br><br>
+                                    3 meses sin intereses en compras mayores a $1,000 pesos.<br>
+                                    6 meses sin intereses en compras mayores a $1,500 pesos.<br>
+                                    9 meses sin intereses en compras mayores a $1,800 pesos.<br>
+                                    12 meses sin intereses en compras mayores a $2,000 pesos.<br>
+                                </p>
+
+                            </div>
+
+
+                            <div class="parrafo">
+                                <h2>Meses sin intereses con PayPal.</h2>
+                                <p>
+                                    Elige entre 3, 6 y 9 meses sin intereses en compras mayores a $1,800 pesos pagando
+                                    con
+                                    PayPal.
+                                </p>
+                            </div>
+
+
+                            <div class="parrafo">
+                                <h2>Tarjeta de crédito Banamex a 3, 6, 12 y 18 meses sin intereses. Pago con tarjetas de
+                                    crédito Banamex.</h2>
+                                <p>
+                                    3 meses sin intereses en compras mayores a $1,000 pesos.<br>
+                                    6 meses sin intereses en compras mayores a $1,500 pesos.<br>
+                                    12 meses sin intereses en compras mayores a $2,000 pesos.<br>
+                                    18 meses sin intereses en compras mayores a $2,500 pesos.<br>
+                                </p>
+
+
+                            </div>
+
+
+                            <div class="parrafo">
+                                <h2>Meses sin intereses pagando con Tarjeta Club dp.</h2>
+                                <p>
+                                    3 meses sin intereses en compras mayores a $1,000 pesos. 6 meses sin intereses en
+                                    compras mayores a $1,500 pesos.
+                                </p>
+
+                            </div>
+
+
+                            <div class="parrafo">
+                                <h2>Productos con precio erróneo.</h2>
+                                <p>
+                                    A causa de que nuestro sistema puede presentar errores en los precios publicados en
+                                    nuestros productos, se le comunicará al cliente de la situación y se le presentarán
+                                    las
+                                    opciones de pagar el precio correcto del producto o cancelar el pedido de dicho
+                                    producto, siendo el importe cobrado rembolsado al cliente. En caso de no poderlo
+                                    contactar a través de los datos que dejó en su registro de compra, la operación será
+                                    cancelada.
+                                </p>
+                            </div>
+
+                            <div class="parrafo">
+                                <h2>En mercancía con descuento o en liquidación no se aceptan devoluciones.</h2>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="tab">
+                        <input type="checkbox" id="chck2">
+                        <label class="tab-label" for="chck2">TÉRMINOS Y CONDICIONES DE PROMOCIONES APLICABLES EN TIENDAS
+                            FÍSICAS DPSTREET</label>
+                        <div class="tab-content">
+                            <h1 class="titulosTabs">
+                                TÉRMINOS Y CONDICIONES DE PROMOCIONES APLICABLES EN TIENDAS FÍSICAS DPSTREET</h1>
+                            <br><br>
+
+                            <!--30% en el segundo artículo-->
+                            <div class="parrafo">
+                                <h2>30% en el segundo artículo</h2>
+                                <p>
+                                    30% en la compra de tu primer artículo de precio regular, llévate el segundo de
+                                    igual o menor precio con 30% de descuento. Promoción válida con pago en
+                                    efectivo, Club dp, tarjetas de débito y tarjetas de crédito participantes, no
+                                    aplica marca Nike, Fila, converse, new era y celulares. No valida con otras
+                                    promociones. Vigencia al 31 de Diciembre 2022. Válida en tiendas dpstreet de
+                                    plazas participantes: Durango, Zacatecas, Córdoba, Guaymas,, Celaya, Morelia,
+                                    Orizaba, Colima, Puerto Vallarta, Uruapan, Mazatlán, Tepic, Coatzacoalcos, Cd
+                                    Obregón, Saltillo, Los Mochis, Villahermosa, Navojoa, Hermosillo, Culiacán,
+                                    Guadalajara, Minatitlán, Chihuahua, Veracruz.
+                                </p>
+                            </div>
+
+                            <!--40% en el segundo artículo-->
+                            <div class="parrafo">
+                                <h2>40% en el segundo artículo</h2>
+                                <p>
+                                    40% en el segundo artículo, en la compra de tu primer artículo de precio
+                                    regular, llévate el segundo de igual o menor precio con 40% de descuento.
+                                    Promoción válida con pago en efectivo, Club dp, tarjetas de débito y tarjetas de
+                                    crédito participantes, no aplica marca Nike, Converse, New era, Fila y
+                                    celulares. No valida con otras promociones. Vigencia al 31 de Diciembre 2022.
+                                    Promocion valida en tiendas dpstreet de plazas participantes: Leon,
+                                    Aguascalientes, Irapuato, Merida, Suc 77 Culiacan, Suc 72 Guadalajara, Suc 112
+                                    Guadalajara, Suc 280 Hermosillo.
+                                </p>
+                            </div>
+
+                            <!--Meses sin Intereses-->
+                            <div class="parrafo">
+                                <h2>Meses sin Intereses</h2>
+                                <p>
+                                    <ul>
+                                        <li>
+                                            <strong>3 Meses sin intereses:</strong>:
+                                            Válida con un mínimo de compra de $1,000, pagando con
+                                            tarjetas de crédito BBVA, Citibanamex Bancomer, Banorte y Santander. No
+                                            válida con otras promociones en tienda. Válida en todas las tiendas
+                                            dportenis. Sujeto a cambios en el monto sin previo aviso.
+                                        </li>
+                                        <li>
+                                            <strong>6 Meses sin intereses:</strong>
+                                            Válida con un mínimo de compra de $1,500, pagando con
+                                            tarjetas de crédito BBVA, Citibanamex Bancomer, Banorte y Santander. No
+                                            válida con otras promociones en tienda. Válida en todas las tiendas
+                                            dportenis. Sujeto a cambios en el monto sin previo aviso.
+                                        </li>
+                                        <li>
+                                            <strong>12 Meses sin intereses:</strong>
+                                            Válida con un mínimo de compra de $2,000, pagando
+                                            con tarjetas de crédito BBVA, Citibanamex Bancomer, Banorte y Santander. No
+                                            válida con otras promociones en tienda. Válida en todas las tiendas
+                                            dportenis. Sujeto a cambios en el monto sin previo aviso.
+
+                                        </li>
+                                        <li>
+                                            <strong>18 Meses sin intereses:</strong>
+                                            Válida con un mínimo de compra de $2,500, pagando
+                                            con tarjetas de crédito Citi Banamex. No válida con otras promociones en
+                                            tienda. Válida en todas las tiendas dportenis. Sujeto a cambios en el monto
+                                            sin previo aviso.
+                                        </li>
+                                    </ul>
+                                </p>
+
+                            </div>
+
+                            <!--40% de descuento + 20% adicional-->
+                            <div class="parrafo">
+                                <h2>40% de descuento + 20% adicional</h2>
+                                <p>
+                                    20% de descuento adicional al producto marcado con el 40% de descuento. Promoción
+                                    válida pagando con dpvale, Club dp, efectivo, tarjetas de débito y crédito
+                                    participantes. Vigencia del 4 de febrero al 31 de diciembre del 2022 o hasta agotar
+                                    existencias en producto participante. No válido con otras promociones.
+                                    Tiendas dpstreet participantes: 086 CTZ TDS Morelos, 113 HMO TDS Matamoros, 123 GDL
+                                    TDS Santa Mónica, 128 MIN TDS Plaza Cristal, 135 MAZ TDS Plaza Ley el Mar, 139 ORI
+                                    TDS Francisco I Madero, 151 MOC TDS Miguel Hidalgo, 216 MOR TDS Macro Plaza Estadio,
+                                    223 VAL TDS Benito Juarez, 231 TEP TDS Sebastian Lerdo, 236 COL TDS Francisco I
+                                    Madero II.
+                                </p>
+                            </div>
+
+                            <!--Tarjeta Club dp crédito:-->
+                            <div class="parrafo">
+                                <h2>Tarjeta Club dp crédito:</h2>
+                                <ul>
+                                    <li>
+                                        <strong>3 Meses sin intereses.</strong> Válida con un mínimo de compra de
+                                        $3,000, pagando con
+                                        tarjeta club dp. Aplica más descuento en el segundo artículo. Válido solo para
+                                        nuevos clientes de tarjeta club dp. No aplica para clientes ya afiliados. No
+                                        valida con otras promociones en tienda. Válida en todas las tiendas dportenis.
+                                        Sujeto a cambios en el monto sin previo aviso.
+                                    </li>
+                                    <li>
+                                        <strong>6 Meses fijos financiados.</strong> Valida con un mínimo de compra de
+                                        $3,000, pagando con
+                                        tarjeta club dp. Si valida con otras promociones en tienda. Válida en todas las
+                                        tiendas dportenis. Sujeto a cambios en el monto sin previo aviso.
+
+                                    </li>
+                                    <li>
+                                        <strong>8 Meses fijos financiados.</strong> Valida con un mínimo de compra de
+                                        $3,500, pagando con
+                                        tarjeta club dp. Si valida con otras promociones en tienda. Válida en todas las
+                                        tiendas dportenis. Sujeto a cambios en el monto sin previo aviso.
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!--Puntos:-->
+                            <div class="parrafo">
+                                <h2>Puntos:</h2>
+                                <ul>
+                                    <li>Tarjeta de crédito: </li>
+                                    <ul>
+                                        <li>Acumula 2% en todas las compras y 4% en la semana de cumpleaños (4 días
+                                            antes y
+                                            4 días después de la fecha de nacimiento)</li>
+                                    </ul>
+
+                                    <li>Tarjeta solo de lealtad: </li>
+                                    <ul>
+                                        <li>Acumula 10% en la primera compra, 2% en el resto de compras y 4% en la
+                                            semana de
+                                            cumpleaños (4 días antes y 4 días después de la fecha de nacimiento)</li>
+                                    </ul>
+
+                                    <li>Acumulación de puntos: </li>
+                                    <ul>
+                                        <li>Aplica sobre el monto total de compra</li>
+                                        <li>No se acumulan puntos por la parte que se esté pagando con puntos </li>
+                                        <li>Compras sí hay solamente acumulan puntos cuando están siendo pagadas con
+                                            crédito
+                                            Club dp</li>
+                                        <li>Los puntos se ven reflejados un día después de la compra</li>
+                                    </ul>
+
+                                    <li>Canje de puntos:</li>
+                                    <ul>
+                                        <li>No hay restricción para el canje de puntos</li>
+                                    </ul>
+
+                                    <li>Valor del punto:</li>
+                                    <ul>
+                                        <li>1 punto = $1.00</li>
+                                    </ul>
+
+                                    <li>Vigencia de los puntos:</li>
+                                    <ul>
+                                        <li>Todos los puntos que no sean canjeados se vencen este 30 de abril (incluso
+                                            clientes nuevos)</li>
+                                    </ul>
+                                </ul>
+                            </div>
+
+                            <!--Plazos dpvale-->
+                            <div class="parrafo">
+                                <h2>Plazos dpvale</h2>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <strong>Plazo 4 quincenas:</strong> valido pagando con dpvale de 1 peso
+                                            hasta 999 pesos.
+                                            Valida con producto descontado en tiendas. No valido con otras promociones.
+                                            Plazas
+                                            Participantes: Cárdenas, Córdoba, Celaya, Chihuahua, Coatzacoalcos, Colima,
+                                            Comalcalco,
+                                            Córdoba, Culiacán, Delicias, Durango, Fresnillo, Guamúchil, Guasave,
+                                            Guaymas,
+                                            Hermosillo, Los Mochis, Mérida, Minatitlán, Morelia, Mazatlán, Navojoa,
+                                            Orizaba,
+                                            Saltillo, Tepic, Uruapan, Puerto Vallarta , Villa hermosa, Zacatecas,
+                                            Zamora).
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Plazo 12 quincenas:</strong> valido pagando con dpvale con un mínimo
+                                            de
+                                            compra
+                                            de $1,000. Valida con producto descontado en tiendas. No valido con otras
+                                            promociones.Plazas Participantes: (Cárdenas, Córdoba, Celaya, Chihuahua,
+                                            Coatzacoalcos,
+                                            Colima, Comalcalco, Córdoba, Culiacán, Delicias, Durango, Fresnillo,
+                                            Guamúchil,
+                                            Guasave,
+                                            Guaymas, Hermosillo, Los Mochis, Mérida, Minatitlán, Morelia, Mazatlán,
+                                            Navojoa,
+                                            Orizaba, Saltillo, Tepic, Uruapan, Puerto Vallarta, Villa Hermosa,
+                                            Zacatecas,
+                                            Zamora).
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Plazo 14 quincenas: </strong> valido pagando con dpvale con un
+                                            mínimo de compra
+                                            de $1,500. Valida con producto descontado en tiendas. No valido con otras
+                                            promociones.Plazas Participantes: (Córdoba, Culiacán, Guamúchil, Guasave,
+                                            Guaymas,Hermosillo, Los Mochis, Navojoa).
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Compre hoy y pague hasta 15 de octubre:</strong>
+                                            promoción válida pagando con dpvale en
+                                            compras mínimas de 3000. Plazo de 8 quincenas. Valida con producto
+                                            descontado en tiendas. No Válido con otras
+                                            promociones.Plazas Participantes: Ciudad Obregón, Chihuahua, Culiacán,
+                                            Delicias, Durango, Fresnillo, Guamúchil, Guasave, Guaymas, Hermosillo, Los
+                                            mochis, Mazatlán, Navojoa, Saltillo, Tepic, Vallarta, Zacatecas, Cardenas,
+                                            Celaya, Coatzacoalcos, Colima, Comalcalco, Cordoba, Minatitlan, Morelia,
+                                            Orizaba, Uruapan, Villa Hermosa, Zamora. Cambio en vigencia sin previo
+                                            aviso.
+
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <input type="checkbox" id="chck3">
+                        <label class="tab-label" for="chck3">POLÍTICAS, TÉRMINOS Y CONDICIONES DPSTREET.</label>
+                        <div class="tab-content">
+                            <h1 id="terminos-tiendas" class="titulosTabs">
+                                POLÍTICAS, TÉRMINOS Y CONDICIONES DPSTREET.</h1>
+
+
+                            <br />
+
+                            <!--Aviso de privacidad simplificado-->
+                            <div class="parrafo">
+                                <h2>Aviso de privacidad simplificado.</h2>
+                                <p>
+                                    GRUPO DP, con domicilio en Melchor Ocampo #1005 Col. Centro. C.P. 82000. Mazatlán,
+                                    Sinaloa, México, utilizará sus datos personales para alguna(s) de las finalidades
+                                    siguientes: Fines mercadológicos y de publicidad. - Envío de promociones, ofertas,
+                                    preventas, activaciones e información especializada de productos y servicios;
+                                    encuestas
+                                    de satisfacción y calidad del servicio; informar sobre cambios o nuevos productos o
+                                    servicios; estudios internos sobre hábitos de consumo. Prospección comercial. -
+                                    tramitar
+                                    solicitudes de crédito; otorgamiento de crédito; Necesarios.- contacto y
+                                    comunicación;
+                                    atención y servicio; facturación; procesamiento de compras físicas y/o sitio web y/o
+                                    vía
+                                    telefónica; devoluciones; envío y rastreo de producto; envío de informes generales;
+                                    proveer los productos o servicios requeridos; dar cumplimiento a obligaciones
+                                    contraídas; llevar a cabo actos de cobranza relacionados con el crédito solicitado;
+                                    Seguridad en general.- Video vigilancia para protección de clientes y recursos de
+                                    GRUPO
+                                    DP. Si usted no está de acuerdo con alguna de las finalidades aquí descritas, por
+                                    favor
+                                    utilice el mecanismo contenido en el aviso de privacidad integral para hacérnoslo
+                                    saber
+                                    dentro de los cinco días en que tuvimos el primer contacto con usted, de lo
+                                    contrario
+                                    entenderemos que nos ha otorgado su consentimiento. Para más información acerca del
+                                    tratamiento y de los derechos que puede hacer valer, usted puede acceder al aviso de
+                                    privacidad integral ingresando a nuestro sitio web en <a
+                                        href="http://www.dpstreet.mx/">http://www.dpstreet.mx/</a> , apartado Aviso de
+                                    Privacidad.
+                                </p>
+
+                            </div>
+
+                            <!--Garantías-->
+                            <div class="parrafo">
+                                <h2>Garantías.</h2>
+                                <p>
+                                    En caso de que el producto adquirido presente defectos de fabricación podrás hacer
+                                    efectiva su garantía dentro de los 90 días siguientes a la compra. Los defectos
+                                    ocasionados a la mercancía por mal uso no serán sujetos a cambio o devolución. En
+                                    relojes la garantía solo aplica en manecillas, caratula y movimiento, y estará
+                                    sujeta a
+                                    evaluación del proveedor Metro Service Center México. En lentes garantía solo aplica
+                                    en
+                                    defectos de producción y estará sujeta a valoración del proveedor Luxotica México
+                                    S.A.
+                                    de C.V. En celulares deberás solicitar la garantía directamente a la compañía
+                                    telefónica
+                                    con la que se contrató la línea, previo a su uso el consumidor se compromete a leer
+                                    el
+                                    instructivo y conocer las funcionalidades del equipo. Productos sujetos a
+                                    disponibilidad. Conserva ticket y empaque en buen estado, preséntalos al momento de
+                                    cualquier reclamación.
+                                </p>
+                            </div>
+
+                            <!--Devoluciones-->
+                            <div class="parrafo">
+                                <h2>Devoluciones.</h2>
+
+                                <p>
+                                    Cuentas con 30 días para realizar cualquier devolución o cambio por retracto de
+                                    compra.
+                                    El producto debe permanecer nuevo y sin uso, sin que haya sufrido deterioro y con
+                                    las
+                                    etiquetas originales sin haber sido desprendidas. En mercancía con descuento mayor o
+                                    igual al 40% no se aplica devolución. En celulares deberá solicitarse directamente a
+                                    la
+                                    compañía telefónica con la que se contrató la línea. Producto debe permanecer nuevo
+                                    y
+                                    sin uso. Conserve en buen estado su nota y empaque o envoltorio para cualquier
+                                    reclamación o cambio. Por higiene no aceptamos devoluciones de ropa Interior, trajes
+                                    de
+                                    Baño, calcetas, leggings y tops deportivos. El cambio de tu producto estará sujeto a
+                                    disponibilidad.
+                                </p>
+
+                            </div>
+
+                            <!--Sistema apartado-->
+                            <div class="parrafo">
+                                <h2>Sistema de Apartado.</h2>
+                                <p>
+                                    Sistema de apartado: Contrata con el 20% del precio público total de los artículos
+                                    seleccionados, debiendo liquidar en un plazo de 45 días, de lo contrario se aplicará
+                                    una
+                                    pena equivalente al 10% del precio total de los artículos seleccionados. Para más
+                                    información solicita a tu vendedor el contrato de sistema de apartado. Promociones:
+                                    Consultar términos y condiciones en tienda y/o páginas de internet <a
+                                        href="http://www.dpstreet.mx/">http://www.dpstreet.mx/</a> Promociones aplican
+                                    de
+                                    forma independiente. Consulte formas de pago aplicables.
+                                </p>
+                            </div>
+
+                            <!--Formas de pago-->
+                            <div class="parrafo">
+                                <h2>Formas de pago.</h2>
+                                <p>
+                                    Aceptamos tarjetas de crédito City Banamex, BBVA Bancomer, Santander Serfín y Club
+                                    dp;
+                                    tarjetas de débito; efectivo; Sistema de crédito dpvale (AVISO: Canjeante dpvale
+                                    recuerde que nuestros acreditados solicitaron un beneficio adicional de protección
+                                    de su
+                                    deuda al momento del canje del dpvale. Queda a su elección la compañía de seguro que
+                                    desee contratar, al realizar el canje del dpvale deberá mostrar la póliza de
+                                    contratación del seguro.) Club dp puntos. Programa exclusivo para afiliados Club dp.
+                                    Términos y condiciones en <a
+                                        href="https://clubdp.online/">https://clubdp.online/</a> .
+                                </p>
+
+                            </div>
+
+                            <!--Seguros.-->
+                            <div class="parrafo">
+                                <h2>Seguros.</h2>
+                                <p>
+                                    Seguro de vida / deudor (canjeantes dpvale): Suma asegurada en caso de fallecimiento
+                                    es
+                                    de $50,000 pesos, no aplica en caso de homicidio intencional o suicidio. Cubierto el
+                                    adeudo el resto se entrega a su beneficiario. El costo del seguro es de $17.00 pesos
+                                    quincenales según el plazo y/o promoción elegida (4,8,10,12,14 o 16 quincenas).
+                                    Seguro
+                                    de vida / deudor es ofrecido por Ramírez Miramontes y Asociados, S.A. de C.V. y
+                                    Grupo
+                                    Nacional Provincial, S.A.B.. Cada compañía es responsable frente a los asegurados
+                                    del
+                                    cabal cumplimiento de los términos y condiciones de los seguros contratados,
+                                    liberando
+                                    de cualquier responsabilidad a Dportenis. Los términos, condiciones, restricciones y
+                                    exclusiones de cada seguro se establecen en su contrato y/o póliza de seguro
+                                    correspondiente y en <a
+                                        href="https://www.excelenciaseguros.com">www.excelenciaseguros.com</a> o al 800
+                                    001
+                                    8989.
+                                </p>
+
+                            </div>
+
+                            <!--Facturación.-->
+                            <div class="parrafo">
+                                <h2>Facturación.</h2>
+                                <p>
+                                    Para realizar tu factura tienes 30 días naturales a partir de tu fecha de compra.
+                                    Para
+                                    poder realizar tu factura deberás esperar 24 horas después de tu fecha de compra. La
+                                    fecha de tu factura electrónica corresponde al día que se genera. Para generar tu
+                                    factura es necesario ingresar el folio de tu ticket de compra. Para cualquier cambio
+                                    o
+                                    cancelación llama a línea de atención a clientes. Exige tu ticket.
+                                </p>
+                            </div>
+
+                            <!--Atención a clientes.-->
+                            <div class="parrafo">
+                                <h2>Atención a clientes.</h2>
+                                <p>
+                                    Para cualquier duda comuníquese a nuestro Centro de atención a clientes al 66 99 15
+                                    53
+                                    00 seleccionando la opción 1 donde con gusto lo atenderemos.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+</div>
