@@ -45,26 +45,110 @@ h2 {
 }
 
 .title_a {
-    padding: 0 20px 0 0;
+    padding: 1% 20px 1% 1%;
     margin-top: 30px !important;
 }
 
 .subtitle_a {
-    padding: 20px 0 0 0;
+    padding: 20px 16% 0 16%;
 }
 
-.banner-lat {
-    max-width: 286px;
-    width: 100%;
-    margin: 0 auto;
-}
 
-div#ci_espot_3074457345618303093_Widget_ContentCarousel_801_3074457345618303093 {
+
+
+div#contentRecommendationWidget_1_-3000_3074457345618303107,
+div#contentRecommendationWidget_1_-3000_3074457345618303108 {
     width: 30%;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 5%;
     float: left;
-    margin: 1% 0 5% 4%;
+    z-index: 3;
 }
 
+a#prevPageButton_1_-3002_3074457345618303097,
+a#prevPageButton_1_-3002_3074457345618303094,
+a#prevPageButton_1_-3002_3074457345618303102,
+a#prevPageButton_1_-3002_3074457345618303103,
+a#prevPageButton_1_-3002_3074457345618303104 {
+    margin-left: 34%;
+    z-index: 4;
+}
+
+div#contentRecommendationWidget_1_-3000_3074457345618303092,
+div#contentRecommendationWidget_1_-3000_3074457345618303108 {
+    clear: both;
+}
+
+div[id^="catalogEntryRecommendationWidget_"].catalogEntryRecommendationWidget h2 .titleItems {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    text-align: initial;
+    text-transform: none;
+    font-weight: 700;
+    margin-left: 6% !important;
+}
+
+div#contentRecommendationWidget_1_-3000_3074457345618303105 {
+    margin-left: 8.4%;
+    margin-right: 8.4%;
+    margin-bottom: 65px;
+}
+
+.carousel.padding-true>.content {
+    margin: 0 !important;
+}
+
+div#contentRecommendationWidget_1_-3012_3074457345618303109 {
+    margin-top: 55px;
+}
+
+@media screen and (min-width:1920px) {
+    .banner-lat {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner-lat2 {
+        width: 400px;
+        margin: 0 auto;
+        height: 1200px;
+    }
+
+    div#contentRecommendationWidget_1_-3000_3074457345618303108 img {
+        height: 1430px !important;
+    }
+
+    div#contentRecommendationWidget_1_-3000_3074457345618303105 {
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (min-width:781px) and (max-width:1919px) {
+    .banner-lat {
+        max-width: 338px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner-lat2 {
+        width: 338px;
+        margin: 0 auto;
+        height: 1200px;
+    }
+
+    div#contentRecommendationWidget_1_-3000_3074457345618303105 {
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-bottom: 60px;
+    }
+
+    div#contentRecommendationWidget_1_-3000_3074457345618303108 img {
+        height: 1190px !important;
+    }
+}
 
 @media (max-width: 700px) {
     .only-desktop {
@@ -76,17 +160,65 @@ div#ci_espot_3074457345618303093_Widget_ContentCarousel_801_3074457345618303093 
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 22px !important;
+
     }
 
     h2 {
-        font-size: 16px;
+        font-size: 16px !important;
+
+    }
+
+    .title_a {
+        padding: 4% 20px 4% 4%;
+    }
+
+    .subtitle_a {
+        padding: 20px 4% 0 4%;
     }
 
     .banner-lat {
         max-width: inherit;
     }
 
+    div#contentRecommendationWidget_1_-3000_3074457345618303107,
+    div#contentRecommendationWidget_1_-3000_3074457345618303108 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 35px;
+        float: none;
+    }
+
+    div#contentRecommendationWidget_1_-3000_3074457345618303105 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    div[id^="catalogEntryRecommendationWidget_"].catalogEntryRecommendationWidget h2 .titleItems {
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        text-align: initial;
+        text-transform: none;
+        font-weight: 700;
+        margin-left: 6% !important;
+    }
+
+    .swiper-button-prev.swiper-button-white,
+    .swiper-button-next.swiper-button-white {
+        display: none;
+    }
+
+    div#contentRecommendationWidget_1_-3000_3074457345618303106 {
+        padding-right: 0px !important;
+    }
+
+    div#contentRecommendationWidget_1_-3012_3074457345618303109 {
+        margin-top: 30px;
+    }
+
 }
+
 
 </style>
