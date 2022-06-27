@@ -1,6 +1,4 @@
-<style type="text/css">
-
-html,
+<style type="text/css">html,
 body {
     margin: 0;
     padding: 0;
@@ -55,8 +53,7 @@ h2 {
     padding: 20px 16% 0 16%;
 }
 
-
-div#contentRecommendationWidget_1_-3000_3074457345618304068,
+div#contentRecommendationWidget_1_-3000_3074457345618308068,
 div#contentRecommendationWidget_1_-3000_3074457345618303107,
 div#contentRecommendationWidget_1_-3000_3074457345618303108 {
     width: 30%;
@@ -67,7 +64,7 @@ div#contentRecommendationWidget_1_-3000_3074457345618303108 {
     z-index: 3;
 }
 
-
+a#prevPageButton_1_-3002_3074457345618308070,
 a#prevPageButton_1_-3002_3074457345618304069,
 a#prevPageButton_1_-3002_3074457345618303097,
 a#prevPageButton_1_-3002_3074457345618303094,
@@ -141,7 +138,7 @@ div#contentRecommendationWidget_1_-3000_3074457345618303106 {
     div#contentRecommendationWidget_1_-3000_3074457345618303105 {
         margin-top: 50px;
     }
-    
+
 
 }
 
@@ -150,20 +147,21 @@ div#contentRecommendationWidget_1_-3000_3074457345618303106 {
         max-width: 338px;
         width: 100%;
         margin: 0 auto;
-        
+
 
     }
+
     .banner-intermedio {
         max-width: 338px;
         width: 100%;
         margin: 0 auto;
-        
+
 
     }
 
     .banner-lat2 {
         max-width: 338px;
-        width:100%;
+        width: 100%;
         margin: 0 auto;
         height: 1200px;
     }
@@ -210,12 +208,12 @@ div#contentRecommendationWidget_1_-3000_3074457345618303106 {
         max-width: inherit;
     }
 
-    .banner-intermedio{
+    .banner-intermedio {
         max-width: inherit;
     }
 
-
-    div#contentRecommendationWidget_1_-3000_3074457345618304068,
+    
+    div#contentRecommendationWidget_1_-3000_3074457345618308068,
     div#contentRecommendationWidget_1_-3000_3074457345618303107,
     div#contentRecommendationWidget_1_-3000_3074457345618303108 {
         width: 100%;
