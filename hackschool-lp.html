@@ -82,6 +82,7 @@
         clear: both;
     }
 
+
     div[id^="catalogEntryRecommendationWidget_"].catalogEntryRecommendationWidget h2 .titleItems {
         font-size: 20px;
         font-family: "Roboto", sans-serif;
@@ -107,10 +108,6 @@
 
     div#contentRecommendationWidget_1_-3000_3074457345618303106 {
         padding: 0 0px !important;
-    }
-
-    #banner1 {
-        margin: 0 5% 0 5%;
     }
 
 
@@ -261,14 +258,35 @@
 </style>
 
 
-<!--01 Estilos General-->
+<!--01 Estilos Custom-->
 <style type="text/css">
+    #section4img h2,
     .titleItems {
         text-align: center !important;
+        font-size: 30px !important;
+        font-family: "Roboto", sans-serif;
+        text-transform: none;
+        font-weight: 700;
+        margin-bottom: 2%;
+        color: #010f1c;
+    }
+
+
+    #banner1,
+    #banner2 {
+        margin: 0 5% 0 5%;
+    }
+
+    #section4img {
+
+        margin: 0 4px 0 5%;
+    }
+
+    .owl-item-active {
+        width: 5%;
+        margin: 20px;
     }
 </style>
-
-
 
 
 
@@ -313,6 +331,7 @@
 
         .head img {
             width: 100%;
+            margin-right: -40px;
         }
 
         .head video {
@@ -379,6 +398,7 @@
 
 </div>
 
+
 <!--07 Banner1  -->
 <div id="banner1">
     <div class="only-desktop">
@@ -395,37 +415,42 @@
     </div>
 </div>
 
+
 <!--08 Seccion de 4 imagenes-->
 <div id="section4img">
 
 
     <style type="text/css">
-        .4images {
+        .images4 {
             display: flex;
             justify-content: space-evenly;
             align-content: center;
-            margin: 3% 0;
+
         }
 
-        .4images img {
-            width: 30%;
+        .images4 img {
+            width: 80%;
+
+            /*
+            width: 90%;
+            height: 80%;*/
         }
 
-        .4images video {
+        .images4 video {
             width: 24%;
         }
 
         @media (max-width: 700px) {
-            .4images {
+            .images4 {
                 display: block;
                 margin: 0;
             }
 
-            .4images img {
+            .images4 img {
                 width: 100%;
             }
 
-            .4images video {
+            .images4 video {
                 width: 100%;
             }
         }
@@ -436,29 +461,62 @@
         <h2>Complementa tu estilo</h2>
 
         <div class="layout-1">
-            <div class="4images">
-                <a
-                    href="https://www.dpstreet.mx/marcas-dpstreet?facetName_3=Negro&facetName_2=Blanco&facetName_1=Calzado&fromPage=catalogEntryList&beginIndex=0&orderBy=4&facet_1=attributes.7741124012283333837.value.raw%253A%2522Calzado%2522&facet_2=attributes.7741124012283333835.value.raw%253A%2522Blanco%2522&pageView=grid&facet_3=attributes.7741124012283333835.value.raw%253A%2522Negro%2522">
-                    <img
-                        src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-desktop/">
-                </a>
-                <a
-                    href="https://www.dpstreet.mx/marcas-dpstreet?facetName_1=Ropa&fromPage=catalogEntryList&beginIndex=0&orderBy=5&facet_1=attributes.7741124012283333837.value.raw%253A%2522Ropa%2522&pageView=grid">
-                    <img
-                        src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-desktop/">
-                </a>
-                <a
-                    href="https://www.dpstreet.mx/SearchDisplay?sType=SimpleSearch&ddkey=ProductListingView_5_-3011_3074457345618267311&fromPage=catalogEntryList&searchTerm=mochilas&urlRequestType=Base&catalogId=3074457345616678168&resultType=products&disableProductCompare=false&showResultsPage=true&beginIndex=0&resultCatEntryType=2&langId=-5&enableSKUListView=false&pageSize=24&orderBy=4&ajaxStoreImageDir=https%3A%2F%2Fd1jewdtl6xqlcs.cloudfront.net%2Fwcsstore%2FDpstreetStorefrontAssetStore%2F&storeId=715839934">
-                    <img
-                        src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-desktop/">
-                </a>
-                <a
-                    href="https://www.dpstreet.mx/SearchDisplay?sType=SimpleSearch&ddkey=ProductListingView_5_-3011_3074457345618267311&fromPage=catalogEntryList&searchTerm=calcetas&urlRequestType=Base&catalogId=3074457345616678168&resultType=products&disableProductCompare=false&showResultsPage=true&beginIndex=0&resultCatEntryType=2&langId=-5&enableSKUListView=false&pageSize=24&orderBy=4&ajaxStoreImageDir=https%3A%2F%2Fd1jewdtl6xqlcs.cloudfront.net%2Fwcsstore%2FDpstreetStorefrontAssetStore%2F&storeId=715839934">
-                    <img
-                        src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-desktop/">
-                </a>
+
+            <div class="only-desktop">
+                <div class="images4">
+
+                    <a
+                        href="https://www.dpstreet.mx/marcas-dpstreet?facetName_3=Negro&facetName_2=Blanco&facetName_1=Calzado&fromPage=catalogEntryList&beginIndex=0&orderBy=4&facet_1=attributes.7741124012283333837.value.raw%253A%2522Calzado%2522&facet_2=attributes.7741124012283333835.value.raw%253A%2522Blanco%2522&pageView=grid&facet_3=attributes.7741124012283333835.value.raw%253A%2522Negro%2522">
+                        <img
+                            src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-desktop/regreso-clases-dpstreet-COMPLEMENTO-TENIS.jpg">
+                    </a>
+                    <a
+                        href="https://www.dpstreet.mx/marcas-dpstreet?facetName_1=Ropa&fromPage=catalogEntryList&beginIndex=0&orderBy=5&facet_1=attributes.7741124012283333837.value.raw%253A%2522Ropa%2522&pageView=grid">
+                        <img
+                            src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-desktop/regreso-clases-dpstreet-COMPLEMENTO-ROPA.jpg">
+                    </a>
+                    <a
+                        href="https://www.dpstreet.mx/SearchDisplay?sType=SimpleSearch&ddkey=ProductListingView_5_-3011_3074457345618267311&fromPage=catalogEntryList&searchTerm=mochilas&urlRequestType=Base&catalogId=3074457345616678168&resultType=products&disableProductCompare=false&showResultsPage=true&beginIndex=0&resultCatEntryType=2&langId=-5&enableSKUListView=false&pageSize=24&orderBy=4&ajaxStoreImageDir=https%3A%2F%2Fd1jewdtl6xqlcs.cloudfront.net%2Fwcsstore%2FDpstreetStorefrontAssetStore%2F&storeId=715839934">
+                        <img
+                            src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-desktop/regreso-clases-dpstreet-COMPLEMENTO-MOCHILAS.jpg">
+                    </a>
+                    <a
+                        href="https://www.dpstreet.mx/SearchDisplay?sType=SimpleSearch&ddkey=ProductListingView_5_-3011_3074457345618267311&fromPage=catalogEntryList&searchTerm=calcetas&urlRequestType=Base&catalogId=3074457345616678168&resultType=products&disableProductCompare=false&showResultsPage=true&beginIndex=0&resultCatEntryType=2&langId=-5&enableSKUListView=false&pageSize=24&orderBy=4&ajaxStoreImageDir=https%3A%2F%2Fd1jewdtl6xqlcs.cloudfront.net%2Fwcsstore%2FDpstreetStorefrontAssetStore%2F&storeId=715839934">
+                        <img
+                            src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-desktop/regreso-clases-dpstreet-COMPLEMENTO-CALCETAS.jpg">
+                    </a>
+
+                </div>
 
             </div>
+
+            <div class="only-mobile">
+                <div class="images4">
+
+                    <a
+                        href="https://www.dpstreet.mx/marcas-dpstreet?facetName_3=Negro&facetName_2=Blanco&facetName_1=Calzado&fromPage=catalogEntryList&beginIndex=0&orderBy=4&facet_1=attributes.7741124012283333837.value.raw%253A%2522Calzado%2522&facet_2=attributes.7741124012283333835.value.raw%253A%2522Blanco%2522&pageView=grid&facet_3=attributes.7741124012283333835.value.raw%253A%2522Negro%2522">
+                        <img
+                            src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-mobile/COMPLEMENTO-TENIS.jpg">
+                    </a>
+                    <a
+                        href="https://www.dpstreet.mx/marcas-dpstreet?facetName_1=Ropa&fromPage=catalogEntryList&beginIndex=0&orderBy=5&facet_1=attributes.7741124012283333837.value.raw%253A%2522Ropa%2522&pageView=grid">
+                        <img
+                            src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-mobile/COMPLEMENTO-ROPA.jpg">
+                    </a>
+                    <a
+                        href="https://www.dpstreet.mx/SearchDisplay?sType=SimpleSearch&ddkey=ProductListingView_5_-3011_3074457345618267311&fromPage=catalogEntryList&searchTerm=mochilas&urlRequestType=Base&catalogId=3074457345616678168&resultType=products&disableProductCompare=false&showResultsPage=true&beginIndex=0&resultCatEntryType=2&langId=-5&enableSKUListView=false&pageSize=24&orderBy=4&ajaxStoreImageDir=https%3A%2F%2Fd1jewdtl6xqlcs.cloudfront.net%2Fwcsstore%2FDpstreetStorefrontAssetStore%2F&storeId=715839934">
+                        <img
+                            src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-mobile/COMPLEMENTO-MOCHILAS.jpg">
+                    </a>
+                    <a
+                        href="https://www.dpstreet.mx/SearchDisplay?sType=SimpleSearch&ddkey=ProductListingView_5_-3011_3074457345618267311&fromPage=catalogEntryList&searchTerm=calcetas&urlRequestType=Base&catalogId=3074457345616678168&resultType=products&disableProductCompare=false&showResultsPage=true&beginIndex=0&resultCatEntryType=2&langId=-5&enableSKUListView=false&pageSize=24&orderBy=4&ajaxStoreImageDir=https%3A%2F%2Fd1jewdtl6xqlcs.cloudfront.net%2Fwcsstore%2FDpstreetStorefrontAssetStore%2F&storeId=715839934">
+                        <img
+                            src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-mobile/COMPLEMENTO-CALCETAS.jpg">
+                    </a>
+
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -471,8 +529,7 @@
 <div id="banner2">
     <div class="only-desktop">
         <a target="_blank" href="" class="bloque_link">
-            <img src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-desktop/"
-                alt="" />
+            <img src="" alt="" />
         </a>
     </div>
     <div class="only-mobile">
