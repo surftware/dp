@@ -263,9 +263,9 @@
     #section4img h2,
     .titleItems {
         text-align: center !important;
-        font-size: 30px !important;
         font-family: "Roboto", sans-serif;
         text-transform: none;
+        font-size: 20px;
         font-weight: 700;
         margin-bottom: 2%;
         color: #010f1c;
@@ -273,14 +273,24 @@
 
     #section4img {
 
-        margin: 0 4px 0 5%;
+        margin: 0 4% 0 1%;
+        width: 100%;
     }
 
+    #section2img.content-layout-lp,
+    #titulo1 .content-layout-lp{
+        margin-bottom: 2%;
+
+    }
+
+    #atraction {
+        margin-bottom: 2%;
+    }
 
     #banner1,
     #banner2 {
         margin-top: 0%;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
         margin-right: 5%;
         margin-left: 5%;
     }
@@ -293,9 +303,18 @@
 
     #contentRecommendationWidget_1_-3000_3074457345618310068 .owl-carousel .owl-item {
         width: 5% !important;
-        margin: 0px 20px !important;
+        margin: 0px 10px !important;
     }
 
+    div[id^="contentRecommendationWidget_"].contentRecommendationWidget .carouselWrapper>.content {
+        margin: 0 0 !important;
+        max-width: none;
+    }
+
+
+    #titulo1 .subtitle_a {
+        padding: 20px 5% 0 5%;
+    }
 
     @media (max-width: 780px) {
 
@@ -358,7 +377,9 @@
             display: flex;
             justify-content: space-evenly;
             align-content: center;
-            margin: 3% 0;
+            margin-top:3%;
+            
+
         }
 
         .head img {
@@ -369,6 +390,10 @@
 
         .head video {
             width: 24%;
+        }
+
+        .content-layout-lp .layout-1 .head{
+            margin-bottom: -3% !important;
         }
 
 
@@ -452,13 +477,17 @@
 <!--07 Banner1  -->
 <div id="banner1">
     <div class="only-desktop">
-        <a target="_blank" href="https://www.dpstreet.mx/marcas-dpstreet?facetName_1=Entre+%241000+y+%243800&fromPage=catalogEntryList&beginIndex=0&orderBy=4&facet_1=price_mxn%253A%2528%257B2800%2BTO%2B3800%255D%2529&pageView=grid" class="bloque_link">
+        <a target="_blank"
+            href="https://www.dpstreet.mx/marcas-dpstreet?facetName_1=Entre+%241000+y+%243800&fromPage=catalogEntryList&beginIndex=0&orderBy=4&facet_1=price_mxn%253A%2528%257B2800%2BTO%2B3800%255D%2529&pageView=grid"
+            class="bloque_link">
             <img src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-desktop/promociones-bancarias-dpstreet.gif"
                 alt="" />
         </a>
     </div>
     <div class="only-mobile">
-        <a target="_blank" href="https://www.dpstreet.mx/marcas-dpstreet?facetName_1=Entre+%241000+y+%243800&fromPage=catalogEntryList&beginIndex=0&orderBy=4&facet_1=price_mxn%253A%2528%257B2800%2BTO%2B3800%255D%2529&pageView=grid" class="bloque_link">
+        <a target="_blank"
+            href="https://www.dpstreet.mx/marcas-dpstreet?facetName_1=Entre+%241000+y+%243800&fromPage=catalogEntryList&beginIndex=0&orderBy=4&facet_1=price_mxn%253A%2528%257B2800%2BTO%2B3800%255D%2529&pageView=grid"
+            class="bloque_link">
             <img src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-mobile/Bancarios.gif"
                 alt="" />
         </a>
@@ -479,7 +508,7 @@
         }
 
         .images4 img {
-            width: 80%;
+            width: 94%;
 
             /*
             width: 90%;
