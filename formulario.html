@@ -322,7 +322,7 @@
         display: block;
         margin: auto;
         width: 25%;
-        text-align:center;
+        text-align: center;
     }
 
     #bases {
@@ -339,11 +339,22 @@
         font-size: 35px;
         font-weight: 700;
     }
+
+    @media (max-width: 780px) {
+
+        #titulo1 #bases h2 {
+    
+            padding: 0 10%;
+            line-height: initial;
+        }
+
+
+    }
 </style>
 
 
 
-<!--02 Banner Principal Atraction-->
+<!--02 Atraction -->
 <div id="atraction">
     <div class="only-desktop">
         <a href="">
@@ -359,6 +370,7 @@
         </a>
     </div>
 </div>
+
 
 <!--03 Titulo 1-->
 <div id="titulo1">
@@ -444,6 +456,36 @@
         z-index: 1;
         top: -15%;
         position: relative;
+    }
+
+
+    @media (max-width: 780px) {
+
+        #titulo1 #bases h2 {
+            text-align: justify;
+            padding: 0 10%;
+            line-height: initial;
+        }
+
+        .cajasText {
+
+            height: 5%;
+            width: 100%;
+            margin: 0 2% 3% 2%;
+            font-size: 10px;
+            padding: 2% 2%;
+
+            display: block;
+            margin: auto;
+        }
+
+        #mc_embed_signup div .mce_inline_error {
+            font-size: 10px;
+            padding:1px 0px 10px 5px 
+        }
+
+
+
     }
 </style>
 <div id="mc_embed_signup" class="form1">
@@ -557,18 +599,18 @@
 
 
 <!--08 Banner1  -->
-<div id="banner1">
+<div id="atraction">
     <div class="only-desktop">
         <a href="">
             <img alt="REGRESO-CLASES-DPSTREET"
-                src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-mobile/Bancarios.gif">
+                src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/formregresoclases/regreso-clases-dpstreet.jpg">
         </a>
     </div>
     <div class="only-mobile">
         <a href="">
             <img alt="REGRESO-CLASES-DPSTREET"
                 src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/formregresoclases/mobile/DPS-MOBILE-BANNER.jpg"
-                class="lazyload">
+                class="lazyload desktop-hidden">
         </a>
     </div>
 </div>
@@ -577,19 +619,18 @@
 
 
 <!-- banner 2-->
-
-<div id="banner2">
+<div id="atraction">
     <div class="only-desktop">
         <a href="">
             <img alt="REGRESO-CLASES-DPSTREET"
-                src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/formregresoclases/regreso-clases-banner.jpg">
+                src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/formregresoclases/regreso-clases-dpstreet.jpg">
         </a>
     </div>
     <div class="only-mobile">
         <a href="">
             <img alt="REGRESO-CLASES-DPSTREET"
-                src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/formregresoclases/regreso-clases-banner.jpg"
-                class="lazyload">
+                src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/formregresoclases/mobile/DPS-MOBILE-BANNER.jpg"
+                class="lazyload desktop-hidden">
         </a>
     </div>
 </div>
