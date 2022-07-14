@@ -260,6 +260,10 @@
 
 <!--01 Estilos Custom-->
 <style type="text/css">
+    h1 {
+        padding: 0% 0%;
+    }
+
     #banner1 {
         margin-top: 0%;
         margin-bottom: 5%;
@@ -273,8 +277,16 @@
         background-color: #FFE800;
         display: block;
         margin: auto;
-        width: 40%;
-        padding: 1% 1% !important;
+        width: 35%;
+        padding: 1% 0% !important;
+        color: #333;
+        text-decoration: none;
+    }
+
+    a:-webkit-any-link {
+        color: #333 !important;
+        cursor: pointer;
+        text-decoration: none !important;
     }
 
 
@@ -299,7 +311,7 @@
         float: right;
         position: relative;
         z-index: 2;
-        right: 50px;
+        right: 7%;
 
     }
 
@@ -334,16 +346,15 @@
     }
 
     #titulo1 #bases h2 {
-        padding: 0 10%;
-        line-height: 60px;
-        font-size: 35px;
-        font-weight: 700;
+        padding: 10px 0;
+        font-size: 1.6em;
+        font-weight: 300;
     }
 
     @media (max-width: 780px) {
 
         #titulo1 #bases h2 {
-    
+
             padding: 0 10%;
             line-height: initial;
         }
@@ -377,16 +388,19 @@
     <div class="content-layout-lp">
 
 
-        <h1>Regresa a clases estrenando</h1>
+        <h1 title_a>Regresa a clases estrenando</h1>
 
-        <div id="callToAction">
-            <h2>
-                Registra tu compra
-                <a href="#formulario">
+        <a href="#formulario">
+            <div id="callToAction">
+                <h2>
+                    Registra tu compra
+
                     <span id="botonCall">aquí</span>
-                </a>
-            </h2>
-        </div>
+
+                </h2>
+            </div>
+        </a>
+
 
         <span id="vigencia">
             <h3>
@@ -481,7 +495,7 @@
 
         #mc_embed_signup div .mce_inline_error {
             font-size: 10px;
-            padding:1px 0px 10px 5px 
+            padding: 1px 0px 10px 5px
         }
 
 
