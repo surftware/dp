@@ -1,4 +1,138 @@
-<!--00 Estilos General-->
+<!--00 Estilos Custom-->
+<style type="text/css">
+    p .h1 {
+        text-transform: none;
+        padding: 0% 0%;
+    }
+
+    #banner1 {
+        margin-top: 0%;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+
+    }
+
+
+    #callToAction {
+        background-color: #FFE800;
+        display: block;
+        margin: auto;
+        width: 35%;
+        padding: 1% 0% !important;
+        color: #333;
+        text-decoration: none;
+    }
+
+    a:-webkit-any-link {
+        color: #333 !important;
+        cursor: pointer;
+        text-decoration: none !important;
+    }
+
+
+    #boton,
+    #botonCall {
+
+        border-left: none;
+        cursor: pointer;
+        display: block;
+        font-weight: 700;
+        border: none;
+        box-sizing: border-box;
+        text-align: center;
+        text-decoration: none;
+        padding: 2% 5%;
+        width: auto;
+        font-size: 14px;
+
+        color: #fff !important;
+        background: #000 !important;
+        text-transform: uppercase;
+        float: right;
+        position: relative;
+        z-index: 2;
+        right: 7%;
+
+    }
+
+    #boton {
+        float: left;
+        padding: 1% 2%;
+        margin-left: 17%;
+
+    }
+
+    .linea {
+        border-top: 1px solid black;
+        height: 2px;
+        max-width: 30%;
+        padding: 0;
+
+    }
+
+    #vigencia {
+        display: block;
+        margin: auto;
+        width: 30%;
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    #bases {
+        display: block;
+        margin: auto;
+        width: 80%;
+        text-align: center;
+
+    }
+
+    #titulo1 #bases h2 {
+        padding: 10px 0;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+
+    @media (max-width: 780px) {
+
+        #bases {
+            display: contents;
+            margin: 0 0;
+            width: 100%;
+            text-align: center !important;
+            padding-top: 15%;
+
+        }
+
+        #titulo1 #bases h2 {
+
+            text-align: center;
+            padding: 15px 0 0 0;
+            line-height: initial;
+        }
+
+        #vigencia {
+            margin: 0 0;
+            width: 100% !important;
+            text-align: center;
+        }
+
+        #titulo #vigencia h2 {
+            padding-top: 15px !important;
+            width: 100% !important;
+        }
+
+        #callToAction {
+            width: 72%;
+            padding: 3% 0%;
+        }
+
+
+
+    }
+</style>
+
+<!--01 Estilos General-->
 <style type="text/css">
     html,
     body {
@@ -258,134 +392,6 @@
     }
 </style>
 
-
-<!--01 Estilos Custom-->
-<style type="text/css">
-    .h1,
-    h1 {
-        text-transform: none;
-        padding: 0% 0%;
-    }
-
-    #banner1 {
-        margin-top: 0%;
-        margin-bottom: 5%;
-        margin-right: 5%;
-        margin-left: 5%;
-
-    }
-
-
-    #callToAction {
-        background-color: #FFE800;
-        display: block;
-        margin: auto;
-        width: 35%;
-        padding: 1% 0% !important;
-        color: #333;
-        text-decoration: none;
-    }
-
-    a:-webkit-any-link {
-        color: #333 !important;
-        cursor: pointer;
-        text-decoration: none !important;
-    }
-
-
-    #boton,
-    #botonCall {
-
-        border-left: none;
-        cursor: pointer;
-        display: block;
-        font-weight: 700;
-        border: none;
-        box-sizing: border-box;
-        text-align: center;
-        text-decoration: none;
-        padding: 2% 5%;
-        width: auto;
-        font-size: 14px;
-
-        color: #fff !important;
-        background: #000 !important;
-        text-transform: uppercase;
-        float: right;
-        position: relative;
-        z-index: 2;
-        right: 7%;
-
-    }
-
-    #boton {
-        float: left;
-        padding: 1% 2%;
-        margin-left: 5%;
-
-    }
-
-    .linea {
-        border-top: 1px solid black;
-        height: 2px;
-        max-width: 30%;
-        padding: 0;
-
-    }
-
-    #vigencia {
-        display: block;
-        margin: auto;
-        width: 30%;
-        padding-top: 15px;
-        text-align: center;
-    }
-
-    #bases {
-        display: block;
-        margin: auto;
-        width: 80%;
-        text-align: center;
-
-    }
-
-    #titulo1 #bases h2 {
-        padding: 10px 0;
-        font-size: 1.6em;
-        font-weight: 300;
-    }
-
-    @media (max-width: 780px) {
-
-        #titulo1 #bases h2 {
-            text-align: center;
-            padding: 15px 0 0 0;
-            line-height: initial;
-        }
-
-        #vigencia {
-            margin: 0 0;
-            width:100% !important;
-            text-align: center;
-        }
-
-        #titulo #vigencia h2 {
-            padding-top: 15px !important;
-            width: 100% !important;
-        }
-
-        #callToAction {
-            width: 72%;
-            padding: 3% 0%;
-        }
-
-
-
-    }
-</style>
-
-
-
 <!--02 Atraction -->
 <div id="atraction">
     <div class="only-desktop">
@@ -474,7 +480,7 @@
         line-height: 44px;
 
         width: 50%;
-        margin: 0 0 3% 0;
+        margin: 2px 0 3% 5%;
         border-radius: 100px;
         border: none;
         color: #b8b894 !important;
@@ -503,26 +509,56 @@
         bottom: 50% !important;
     }
 
+    label {
+        padding-left: 7%;
+    }
+
+    #nombre,
+    #ciudad,
+    #correo,
+    #tel,
+    #folio {
+
+
+        margin: 5px auto 15px auto;
+
+    }
+
 
     @media (max-width: 780px) {
 
-        
+
 
         .cajasText {
 
             height: 5%;
-            width: 100%;
+            width: 90%;
             margin: 0 2% 3% 2%;
-            font-size: 10px;
-            padding: 2% 2%;
+            font-size: 20px;
+            padding: 1% 8%;
 
             display: block;
             margin: auto;
         }
 
+        label {
+            padding-left: 10%;
+        }
+
+        #nombre,
+        #ciudad,
+        #correo,
+        #tel,
+        #folio {
+
+
+            margin: 5px auto 15px auto;
+
+        }
+
         #mc_embed_signup div .mce_inline_error {
             font-size: 10px;
-            padding: 1px 0px 10px 5px
+            padding: 0 0 0 9%;
         }
 
 
@@ -553,8 +589,8 @@
                             <label for="mce-CIUDAD">Ciudad  <span class="asterisk">*</span>
                             </label>
                             <div id="ciudad">
-                                <input type="text" value="Ingresa la Ciudad desde donde nos visitas" name="CIUDAD"
-                                    class="required cajasText" id="mce-CIUDAD" onclick="this.value=''">
+                                <input type="text" value="Ingresa tu Ciudad" name="CIUDAD" class="required cajasText"
+                                    id="mce-CIUDAD" onclick="this.value=''">
                             </div>
                         </div>
 
