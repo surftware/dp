@@ -15,6 +15,7 @@
     }
 
 
+    .h1,
     h1 {
         font-weight: 300;
         font-size: 2em;
@@ -260,7 +261,9 @@
 
 <!--01 Estilos Custom-->
 <style type="text/css">
+    .h1,
     h1 {
+        text-transform: none;
         padding: 0% 0%;
     }
 
@@ -434,7 +437,7 @@
     }
 
     #formulario {
-        padding: 3%;
+        padding: none;
     }
 
     #formulario h2 {
@@ -464,12 +467,22 @@
     }
 
     #mc_embed_signup div .mce_inline_error {
-        margin: 0 0 0 0;
+
         color: #F11;
         background-color: #FFE800;
         z-index: 1;
         top: -15%;
         position: relative;
+    }
+
+    #ticketContainer {
+        display: none;
+        background-color: #fff !important;
+        width: 45%;
+        position: relative;
+        z-index: 2;
+        float:right;
+        bottom: 50% !important;
     }
 
 
@@ -504,83 +517,92 @@
 </style>
 <div id="mc_embed_signup" class="form1">
     <div id="formulario">
-        <h1>Ingresa tus datos aquí</h1>
-        <form
-            action="https://dportenis.us3.list-manage.com/subscribe/post?u=7283268a64ede820775006fab&amp;id=d96bebca14"
-            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-            target="_blank"
-            onsubmit="if(document.getElementById('mce-EMAIL').value != ''){document.getElementById('mce-EMAIL').value = document.getElementById('mce-MMERGE5').value + '|' + document.getElementById('mce-EMAIL').value}"
-              novalidate>
-                <div id="mc_embed_signup_scroll">
+        <p class="h1">Ingresa tus datos aquí<p>
+                <form
+                    action="https://dportenis.us3.list-manage.com/subscribe/post?u=7283268a64ede820775006fab&amp;id=d96bebca14"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank"
+                    onsubmit="if(document.getElementById('mce-EMAIL').value != ''){document.getElementById('mce-EMAIL').value = document.getElementById('mce-MMERGE5').value + '|' + document.getElementById('mce-EMAIL').value}"
+                      novalidate>
+                        <div id="mc_embed_signup_scroll">
 
-                <div class="mc-field-group">
-                    <label for="mce-FNAME">Nombre completo  <span class="asterisk">*</span>
-                    </label>
-                    <div id="nombre">
-                        <input type="text" value="Ingresa tu nombre completo aquí" name="FNAME"
-                            class="required cajasText" id="mce-FNAME" onclick="this.value=''">
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME">Nombre completo  <span class="asterisk">*</span>
+                            </label>
+                            <div id="nombre">
+                                <input type="text" value="Ingresa tu nombre completo aquí" name="FNAME"
+                                    class="required cajasText" id="mce-FNAME" onclick="this.value=''">
+                            </div>
+                        </div>
+
+                        <div class="mc-field-group">
+                            <label for="mce-CIUDAD">Ciudad  <span class="asterisk">*</span>
+                            </label>
+                            <div id="ciudad">
+                                <input type="text" value="Ingresa la Ciudad desde donde nos visitas" name="CIUDAD"
+                                    class="required cajasText" id="mce-CIUDAD" onclick="this.value=''">
+                            </div>
+                        </div>
+
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Correo electrónico  <span class="asterisk">*</span>
+                            </label>
+                            <div id="correo">
+                                <input type="email" value="Ingresa tu correo electrónico" name="EMAIL"
+                                    class="required cajasText email" id="mce-EMAIL" onclick="this.value=''">
+                            </div>
+
+                        </div>
+
+                        <div class="mc-field-group size1of2">
+                            <label for="mce-PHONE">Teléfono de contacto  <span class="asterisk">*</span>
+                            </label>
+                            <div id="tel">
+                                <input type="text" value="Ingresa un teléfono de contacto" name="PHONE"
+                                    class="required cajasText" id="mce-PHONE" onclick="this.value=''">
+                            </div>
+                        </div>
+
+                        <div class="mc-field-group">
+                            <label for="mce-MMERGE5">Folio de ticket o número de orden  <span class="asterisk">*</span>
+                            </label>
+                            <div id="folio">
+                                <input type="text" value="Folio de ticket o número de orden" name="MMERGE5"
+                                    class="required cajasText" id="mce-MMERGE5" onclick="this.value=''">
+                            </div>
+
+                        </div>
+
+                        <div id="asterisco" class="indicates-required"><span class="asterisk">*</span>Todos los campos
+                            son
+                            obligatorios</div>
+
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_7283268a64ede820775006fab_d96bebca14" tabindex="-1" value="">
+                        </div>
+                            <div class="clear">
+                            <input id="boton" type="submit" value="REGISTRARME" name="subscribe"
+                                id="mc-embedded-subscribe" class="button">
+                        </div>
+                           
                     </div>
+                </form>
+                <div id="ticketContainer">
+                    <img src="">
+                
+                
                 </div>
-
-                <div class="mc-field-group">
-                    <label for="mce-CIUDAD">Ciudad  <span class="asterisk">*</span>
-                    </label>
-                    <div id="ciudad">
-                        <input type="text" value="Ingresa la Ciudad desde donde nos visitas" name="CIUDAD"
-                            class="required cajasText" id="mce-CIUDAD" onclick="this.value=''">
-                    </div>
-                </div>
-
-                <div class="mc-field-group">
-                    <label for="mce-EMAIL">Correo electrónico  <span class="asterisk">*</span>
-                    </label>
-                    <div id="correo">
-                        <input type="email" value="Ingresa tu correo electrónico" name="EMAIL"
-                            class="required cajasText email" id="mce-EMAIL" onclick="this.value=''">
-                    </div>
-
-                </div>
-
-                <div class="mc-field-group size1of2">
-                    <label for="mce-PHONE">Teléfono de contacto  <span class="asterisk">*</span>
-                    </label>
-                    <div id="tel">
-                        <input type="text" value="Ingresa un teléfono de contacto" name="PHONE"
-                            class="required cajasText" id="mce-PHONE" onclick="this.value=''">
-                    </div>
-                </div>
-
-                <div class="mc-field-group">
-                    <label for="mce-MMERGE5">Folio de ticket o número de orden  <span class="asterisk">*</span>
-                    </label>
-                    <div id="folio">
-                        <input type="text" value="Folio de ticket o número de orden" name="MMERGE5"
-                            class="required cajasText" id="mce-MMERGE5" onclick="this.value=''">
-                    </div>
-
-                </div>
-
-                <div id="asterisco" class="indicates-required"><span class="asterisk">*</span>Todos los campos son
-                    obligatorios</div>
-
-                <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>    
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_7283268a64ede820775006fab_d96bebca14" tabindex="-1" value="">
-                </div>
-                    <div class="clear">
-                    <input id="boton" type="submit" value="REGISTRARME" name="subscribe" id="mc-embedded-subscribe"
-                        class="button">
-                </div>
-                   
-            </div>
-        </form>
     </div>
+    
 
 </div>
+
+
 
 
 <!--05 Terminos y condiciones-->
@@ -598,7 +620,6 @@
     </h1>
 
 </div>
-
 
 
 <!--06 carrusel 1-->
@@ -628,8 +649,6 @@
         </a>
     </div>
 </div>
-
-
 
 
 <!-- banner 2-->
