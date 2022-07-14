@@ -336,7 +336,8 @@
     #vigencia {
         display: block;
         margin: auto;
-        width: 25%;
+        width: 30%;
+        padding-top: 15px;
         text-align: center;
     }
 
@@ -357,10 +358,27 @@
     @media (max-width: 780px) {
 
         #titulo1 #bases h2 {
-
-            padding: 0 10%;
+            text-align: center;
+            padding: 15px 0 0 0;
             line-height: initial;
         }
+
+        #vigencia {
+            margin: 0 0;
+            width:100% !important;
+            text-align: center;
+        }
+
+        #titulo #vigencia h2 {
+            padding-top: 15px !important;
+            width: 100% !important;
+        }
+
+        #callToAction {
+            width: 72%;
+            padding: 3% 0%;
+        }
+
 
 
     }
@@ -406,9 +424,9 @@
 
 
         <span id="vigencia">
-            <h3>
+            <h2>
                 Del 15 de julio al 31 de agosto 2022
-            </h3>
+            </h2>
         </span>
 
         <span id="bases">
@@ -481,18 +499,14 @@
         width: 45%;
         position: relative;
         z-index: 2;
-        float:right;
+        float: right;
         bottom: 50% !important;
     }
 
 
     @media (max-width: 780px) {
 
-        #titulo1 #bases h2 {
-            text-align: justify;
-            padding: 0 10%;
-            line-height: initial;
-        }
+        
 
         .cajasText {
 
@@ -594,11 +608,11 @@
                 </form>
                 <div id="ticketContainer">
                     <img src="">
-                
-                
+
+
                 </div>
     </div>
-    
+
 
 </div>
 
