@@ -464,7 +464,7 @@
 </div>
 
 
-<!--04 Formulario-->
+<!--04 Formulario con monto-->
 <style type="text/css">
     .form1 {
         background-color: #FFE800;
@@ -477,6 +477,7 @@
 
     #formulario {
         padding: none;
+        display: flex;
     }
 
     #formulario h2 {
@@ -494,15 +495,48 @@
         outline: 0;
         line-height: 44px;
 
-        width: 40%;
+        width: 80%;
         margin: 2px 0 3% 5%;
-        border-radius: 100px;
         border: none;
         color: #333 !important;
         background-color: #fff !important;
         font-size: 20px;
         padding: 2% 2%;
 
+    }
+
+    .content-img {
+        background-color: #fff;
+        margin-top: 20px;
+    }
+
+    .content-img h2 {
+        margin-top: 30px !important;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Roboto';
+        margin: 0 auto !important;
+        margin-top: 30px !important;
+        width: 60%;
+        line-height: 25px;
+    }
+
+    p.subtitle-img {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .content-img img {
+        width: 300px;
+        height: 230px;
+        margin: 0 auto;
+    }
+
+    .img2 {
+        width: 600px !important;
+        height: 230px;
+        margin: 0 auto;
     }
 
     #mc_embed_signup div .mce_inline_error {
@@ -526,12 +560,15 @@
     #asterisco,
     label {
         padding-left: 7%;
+        margin-bottom: 30px;
+
     }
 
     #nombre,
     #ciudad,
     #correo,
     #tel,
+    #monto,
     #folio {
 
 
@@ -539,6 +576,9 @@
 
     }
 
+    form#mc-embedded-subscribe-form {
+        width: 50%;
+    }
 
     @media (max-width: 780px) {
 
@@ -567,15 +607,22 @@
             font-weight: bold;
         }
 
+        #asterisco {
+            margin-bottom: 30px;
+        }
+
         #nombre,
         #ciudad,
         #correo,
-        #tel,
-        #folio {
+        #tel {
 
 
             margin: 5px auto 15px auto;
 
+        }
+
+        #folio {
+            margin: 0 0 0 0;
         }
 
         #mc_embed_signup div .mce_inline_error {
@@ -583,19 +630,38 @@
             padding: 0 0 0 9%;
         }
 
+        #formulario {
+            display: block;
+        }
 
+        form#mc-embedded-subscribe-form {
+            width: 100% !important;
+        }
+
+        .content-img {
+            background-color: #fff;
+            margin-top: 100px !important;
+        }
+
+        .content-img h2 {
+            padding-top: 30px;
+        }
+
+        #boton {
+            width: 83% !important;
+        }
 
     }
 </style>
 <div id="mc_embed_signup" class="form1">
-    <div id="formulario">
-        <p class="h1">Ingresa tus datos aquí<p>
+    <p class="h1">Ingresa tus datos aquí<p>
+            <div id="formulario">
                 <form
                     action="https://dportenis.us3.list-manage.com/subscribe/post?u=7283268a64ede820775006fab&amp;id=d96bebca14"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                     target="_blank"
                     onsubmit="if(document.getElementById('mce-EMAIL').value != ''){document.getElementById('mce-EMAIL').value = document.getElementById('mce-MMERGE5').value + '|' + document.getElementById('mce-EMAIL').value}"
-                      novalidate>
+                    novalidate>
                         <div id="mc_embed_signup_scroll">
 
                         <div class="mc-field-group">
@@ -645,6 +711,14 @@
 
                         </div>
 
+                        <div class="mc-field-group size1of2">
+                            <label for="mce-MMERGE6">Monto <span class="asterisk">*</span>
+                            </label>
+                            <div id="monto">
+                                <input type="number" name="MMERGE6" class="required" value="" id="mce-MMERGE6">
+                            </div>
+                        </div>
+
                         <div id="asterisco" class="indicates-required"><span class="asterisk">*</span>Todos los campos
                             son
                             obligatorios</div>
@@ -652,32 +726,36 @@
                         <div id="mce-responses" class="clear">
                             <div class="response" id="mce-error-response" style="display:none"></div>
                             <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>    
+                        </div>
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
                             <input type="text" name="b_7283268a64ede820775006fab_d96bebca14" tabindex="-1" value="">
                         </div>
-                            <div class="clear">
+                        <div class="clear">
                             <input id="boton" type="submit" value="REGISTRARME" name="subscribe"
                                 id="mc-embedded-subscribe" class="button">
                         </div>
-                           
+
                     </div>
                 </form>
 
+                <div class="content-img">
+                    <h2>¿Donde veo el folio del ticket o número de orden?</h2>
+                    <p class="subtitle-img">Compra en tienda física </p>
+                    <img src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/formregresoclases/TICKET-REGRESO-CLASES.png"
+                        alt="Ticket fisico">
+
+                    <p class="subtitle-img">Compra en linea </p>
+                    <img src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/formregresoclases/COMPRA-LINEA-DPSTREETMX.png"
+                        alt="Ticket linea" class="img2">
+                </div>
 
 
-    </div>
+
+            </div>
 </div>
 
-<div id="ticketContainer">
-    <div class="">
 
-
-
-
-    </div>
-</div>
 
 
 
