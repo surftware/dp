@@ -1,12 +1,12 @@
 <!--00 Estilos Custom-->
 <style type="text/css">
     p .h1 {
-        text-transform: none;
+        text-transform: none !important;
         padding: 0% 0%;
     }
 
     .h1 {
-        text-transform: none;
+        text-transform: none !important;
         padding: 0% 0%;
 
     }
@@ -53,9 +53,12 @@
         background: #000 !important;
         text-transform: uppercase;
         float: right;
-        position: relative;
+        position: absolute;
         z-index: 2;
-        right: 5%;
+        right: 36%;
+        top: 42%;
+
+
 
     }
 
@@ -98,6 +101,11 @@
         padding: 10px 0;
         font-size: 1.6em;
         font-weight: 300;
+        text-align: left;
+    }
+
+    #textB {
+        text-align: center !important;
     }
 
     @media (max-width: 780px) {
@@ -117,7 +125,7 @@
 
         #titulo1 #bases h2 {
 
-            text-align: center;
+            text-align: left;
             padding: 20px 6% 0 6%;
             line-height: initial;
         }
@@ -135,16 +143,16 @@
 
         #callToAction {
             width: 53%;
-            padding: 4% 9% 5% 0%;
+            padding: 3% 9% 4% 0%;
             margin-left: 14%;
         }
 
 
         #botonCall {
-            padding: 5% 7%;
+            padding: 4% 7%;
             position: absolute;
             right: 14%;
-            top: 31%;
+            top: 32%;
 
         }
 
@@ -452,7 +460,7 @@
             </div>
         </a>
         <span id="bases">
-            <h2>
+            <h2 id="textB">
                 Participa durante el periodo del 15 de julio al 31 de agosto para ganar una de las 5 iPads, o 1 de las
                 30 tarjetas digitales con valor de $1,000 pesos MXN, monto válido para comprar en nuestra tienda en
                 línea www.dpstreet.mx
@@ -523,10 +531,11 @@
         font-weight: bold;
         text-align: center;
         margin-top: 10px;
+        color: #000;
     }
 
     .content-img img {
-        width: 300px;
+        width: 60%;
         height: 230px;
         margin: 0 auto;
     }
@@ -583,7 +592,7 @@
         .h1 {
             padding-bottom: 0%;
             font-size: 22px;
-            text-transform: none;
+            text-transform: none !important;
         }
 
 
@@ -645,6 +654,12 @@
 
         .content-img h2 {
             padding-top: 30px;
+        }
+
+        .content-img img {
+            width: 300px !important;
+            height: 230px;
+            margin: 0 auto;
         }
 
         #boton {
