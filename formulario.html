@@ -101,9 +101,38 @@
         font-weight: 300;
     }
 
-    .textB{
+    .textB {
         text-align: center !important;
+        padding-top: 84px ;
+        padding-bottom: 0px ;
+        margin-bottom: 0px ;
     }
+
+    .bloque-amarillo {
+        display: block ;
+        position: absolute ;
+        margin: 10% ;
+        top: -23% ;
+        left: 21% ;
+        padding: -10px 0% ;
+        width: 27% ;
+        height: 32% ;
+
+    }
+
+    .bloque-negro {
+        position: relative ;
+        top: -167% ;
+        left: 42% ;
+        display: block ;
+        margin-left: 0% ;
+        width: 45% ;
+        height: 40% ;
+        padding: 7% ;
+    }
+
+
+
 
     @media (max-width: 780px) {
 
@@ -449,10 +478,16 @@
     <div class="content-layout-lp">
         <h1 title_a>Regresa a clases estrenando</h1>
         <a href="#formulario">
-            <div id="callToAction">
+            <div id="callToAction" class="only-mobile">
                 <h2>
                     Registra tu compra
-                    <span id="botonCall">aquí</span>
+                    <span id="botonCall" class="">aquí</span>
+                </h2>
+            </div>
+            <div id="callToAction" class="only-desktop bloque-amarillo">
+                <h2>
+                    Registra tu compra
+                    <span id="botonCall" class="bloque-negro">aquí</span>
                 </h2>
             </div>
         </a>
