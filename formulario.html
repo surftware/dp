@@ -103,32 +103,39 @@
 
     .textB {
         text-align: center !important;
-        padding-top: 84px ;
-        padding-bottom: 0px ;
-        margin-bottom: 0px ;
+        padding-top: 84px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
 
     .bloque-amarillo {
-        display: block ;
-        position: absolute ;
-        margin: 10% ;
-        top: -23% ;
-        left: 21% ;
-        padding: -10px 0% ;
-        width: 27% ;
-        height: 32% ;
+        display: block;
+        position: absolute;
+        margin: 10%;
+        top: 35%;
+        left: 27%;
+        padding: -10px 0%;
+        width: 27%;
+        height: 32%;
 
     }
 
     .bloque-negro {
-        position: relative ;
-        top: -167% ;
-        left: 42% ;
-        display: block ;
-        margin-left: 0% ;
-        width: 45% ;
-        height: 40% ;
-        padding: 7% ;
+        position: absolute !important;
+        top: -1%;
+        left: 92%;
+        display: block !important;
+        margin-left: 0%;
+        width: 45% !important;
+        height: 40%;
+        padding: 7% !important;
+        z-index: 11;
+    }
+
+    .text-bloque-amarillo{
+
+        margin-top:15px !important;
+
     }
 
 
@@ -485,14 +492,19 @@
                 </h2>
             </div>
             <div id="callToAction" class="only-desktop bloque-amarillo">
-                <h2>
+                <h2 class="text-bloque-amarillo">
                     Registra tu compra
                     <span id="botonCall" class="bloque-negro">aquí</span>
                 </h2>
             </div>
         </a>
         <span id="bases">
-            <h2 class="textB">
+            <h2 class="textB only-mobile">
+                Participa durante el periodo del 15 de julio al 31 de agosto para ganar una de las 5 iPads, o 1 de las
+                30 tarjetas digitales con valor de $1,000 pesos MXN, monto válido para comprar en nuestra tienda en
+                línea www.dpstreet.mx
+            </h2>
+            <h2 class="textB only-desktop">
                 Participa durante el periodo del 15 de julio al 31 de agosto para ganar una de las 5 iPads, o 1 de las
                 30 tarjetas digitales con valor de $1,000 pesos MXN, monto válido para comprar en nuestra tienda en
                 línea www.dpstreet.mx
