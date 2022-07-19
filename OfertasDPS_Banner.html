@@ -1,0 +1,35 @@
+<style>
+    .only-desktop {
+        display: block;
+    }
+
+    .only-mobile {
+        display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .only-desktop {
+            display: none;
+        }
+
+        .only-mobile {
+            display: block !important;
+        }
+
+    }
+</style>
+<div id="atraction">
+    <div class="only-desktop">
+        <a href="/bsq/hack-to-school?orderBy=4&pageSize=24">
+            <img alt="HACK-TO-SCHOOL-DPSTREET"
+                src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-desktop/regreso-clases-dpstreet.jpg">
+        </a>
+    </div>
+    <div class="only-mobile">
+        <a href="/bsq/hack-to-school?orderBy=4&pageSize=24">
+            <img alt="HACK-TO-SCHOOL-DPSTREET"
+                src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/lp-hacktoschool-mobile/BACk-TO-SCHOOL-dpstreet-LP.jpg"
+                class="lazyload">
+        </a>
+    </div>
+</div>
