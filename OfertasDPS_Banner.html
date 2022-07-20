@@ -1,7 +1,6 @@
 <style>
     #imgDesktop,
     #imgMobile {
-        display: none;
     }
 
     .only-desktop {
@@ -56,16 +55,9 @@
         }
 
         .enriched {
-            display: block;
+            display: inline-flex;
             margin: 0;
-        }
-
-        .enriched img {
-            width: 100%;
-        }
-
-        .enriched video {
-            width: 100%;
+            justify-content: space-evenly;
         }
 
         .content-layout-ofertasdps h2 {
@@ -109,7 +101,7 @@
 
 
 </div>
-<div id="imgMobile" class="content-layout-ofertasdps ">
+<div id="imgMobile" class="content-layout-ofertasdps only-mobile ">
 
     <div class="layout-1">
         <div class="enriched">
