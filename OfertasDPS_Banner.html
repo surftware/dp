@@ -1,7 +1,5 @@
 <style>
-    #imgDesktop,
-    #imgMobile {
-    }
+    #imgDesktop {}
 
     .only-desktop {
         display: block;
@@ -46,12 +44,18 @@
 
 
     @media only screen and (max-width: 768px) {
+
+
         .only-desktop {
             display: none;
         }
 
         .only-mobile {
             display: block !important;
+        }
+
+        #imgMobile {
+            margin-top: 15px;
         }
 
         .enriched {
